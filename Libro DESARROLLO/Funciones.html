@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="exam.css">
+    <title>Funciones Teoria</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="/images/fafi_logo.png">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Inico</a></li>
+        </ul>
+        <a href="https://utb.edu.ec/" target="_blank">
+        <button class="btn">Universidad</button>
+        </a>
+    </nav>        
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1><span> Cálculo de Varias Variables </span></h1>
+            <h1><span> Tercero "C" Vespertino </span></h1>
+        </div>
+    </header>
+    
+    <div class="book">
+        <div class="page">
+            <h1 class="title">Funciones Trigonometricas</h1>
+            <p>
+                Las integrales trigonométricas son una categoría de integrales definidas en términos de funciones trigonométricas, como el seno, coseno, tangente, secante, cosecante y cotangente.
+                <br/>
+                Una integral se denomina trigonométrica cuando el integrando de la misma está compuesto de funciones trigonométricas y constantes.
+                <br/>
+                Algunas de las identidades trigonométricas que te pueden ser útiles son:
+                <p></p>
+                FORMULAS A UTILIZAR:
+                <br> <br> 
+                \[ \int \sin(x) \, dx = -\cos(x) + C \]
+                \[ \int \sin(u) \cdot u' \, dx = -\cos(u) + C \]
+                \[ \int \cos(x) \, dx = \sin(x) + C \]
+                \[ \int \cos(u) \cdot u' \, dx = \sin(u) + C \]
+                \[ \int \frac{1}{{\cos^2(x)}} \, dx = \int \sec^2(x) \, dx = \int (1 + \tan^2(x)) \, dx = \tan(x) + C \]
+                \[ \int \frac{{u'}}{{\cos^2(u)}} \, dx = \int \sec^2(u) \cdot u' \, dx = \int (1 + \tan^2(u)) \cdot u' \, dx = \tan(u) + C \]
+
+
+
+            </p>
+        </div>
+        <div class="page">
+            <h1 class="title">Funciones Racionales</h1>
+            <p>
+                Son las que se  forman como cociente de dos polinomios, por tanto, estamos hablando de integrales de la forma 
+                Debemos tener en cuenta dos cosas
+                <p></p>
+                Si el grado del numerador es mayor o igual que el del denominador, debemos hacer la división de los polinomios, calculando el cociente y el resto. Hecho esto, y aplicando la regla de la división (dividendo=cociente · divisor + resto), hacemos la siguiente descomposición:  
+                \[ \int \frac{P(x)}{Q(x)} \, dx = \int C(x) \, dx + \int \frac{R(x)}{Q(x)} \, dx \]
+
+                Observa que la primera integral, la sabemos hacer sin problemas pues es la integral de un polinomio, y la segunda, es la integral de una función racional en la que el grado del numerador es menor que el del denominador.
+                <p>
+                </p>
+
+                Si en el numerador aparece la derivada del denominador, la integral será logaritmo neperiano del denominador, pues podría resolverse mediante un cambio de variable llamando "t" al denominador.
+
+                
+                    <li>El denominador solo tiene raíces reales simples.</li>
+                    <li>El denominador solo tiene raíces reales y alguna de ellas múltiple.</li>
+                    <li>En el denominador aparece alguna raíz compleja.</li>
+                
+            </p>
+        </div>
+        <div class="page">
+            <h1 class="title">Integrales de Funciones</h1>
+            <p>
+                es una función especial de relevancia significativa en problemas de física y teoría de números, ya que da una estimación de la cantidad de números primos menores que un determinado valor
+                <h4>Integrales de Funciones Logarítmicas</h4>
+                <li>La integral de la derivada de uno partido por x es igual al logaritmo neperiano del valor absoluto de x.</li>
+                <li>La integral del logaritmo natural de x es igual a x por el logaritmo natural de x menos x</li>
+                <li>La integral del logaritmo en base a de x da como resultado el cociente entre x y el logaritmo natural de a multiplicado por el logaritmo natural de x menos 1.
+                Lógicamente, estas fórmulas de integrales con logaritmos también se aplican cuando está presente la regla de la cadena, es decir, cuando en lugar de una x tenemos una función en el argumento y, además, la derivada de dicha función está multiplicando.</li>
+                \begin{align*}
+                \int \frac{1}{x} \, dx &= \ln |x| + C \\
+                \int \ln(x) \, dx &= x \cdot \ln(x) - x + C \\
+                \int \log_a(x) \, dx &= \frac{x}{\ln(a)} \cdot (\ln(x) - 1) + C
+                \end{align*}
+
+                La función integral logarítmica li(x) es una función especial para resolver determinados problemas de la física y la teoría de números. Proporciona una muy buena aproximación a la función de recuento primo, que encuentra la cantidad de números primos menor que o igual a un valor determinado.
+
+                \begin{align*}
+                \int \frac{u'}{u} \, dx &= \ln |u| + C \\
+                \int \ln(u) \cdot u' \, dx &= u \cdot \ln(u) - u + C \\
+                \int \log_a(u) \cdot u' \, dx &= \frac{u}{\ln(a)} \cdot (\ln(u) - 1) + C
+                \end{align*}
+            </p>
+        </div>
+        <div class="page">
+            <h1 class="title">Las funciones hiperbólicas</h1>
+            <p>
+                son una extensión de las funciones trigonométricas estándar
+                <p></p>
+                Las funciones hiperbólicas son funciones trigonométricas que están basadas en las funciones exponenciales. Algunas de las funciones hiperbólicas más comunes son el seno hiperbólico (sinh), el coseno hiperbólico (cosh) y la tangente hiperbólica (tanh). Al igual que las funciones trigonométricas regulares, las funciones hiperbólicas también se pueden integrar
+
+                <h4>Funciones hiperbólico basicas</h4>
+                \[ \quad \sinh(x) = \frac{e^x - e^{-x}}{2} \]
+                \[ \quad \cosh(x) = \frac{e^x + e^{-x}}{2} \]
+                <h4>Derivadas de Funciones Hiperbolicas</h4>
+                \[ \quad \frac{d}{dx}(\sinh(x)) = \cosh(x) \]
+                \[ \quad \frac{d}{dx}(\cosh(x)) = \sinh(x) \]
+                <h4>Funciones integrales para Funciones Hiperbolicas</h4>
+                \[ \int \sinh(u) \, du = \cosh(u) + C \]
+                \[ \int \cosh(u) \, du = \sinh(u) + C \]
+                \[ \int \cosh^2(u) \, du = -\coth(u) + C \]
+
+            </p>
+        </div>
+    </div>
+
+    
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="/images/fafi_logo.png">
+            </div>
+        </div>   
+    </footer>
+
+    <div class="copyright">
+        TERCERO "C" Vespertino
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

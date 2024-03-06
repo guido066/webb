@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="exam.css">
+    <title>Funciones Teoria</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="/images/fafi_logo.png">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Inico</a></li>
+        </ul>
+        <a href="https://utb.edu.ec/" target="_blank">
+        <button class="btn">Universidad</button>
+        </a>
+    </nav>        
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h1><span> Cálculo de Varias Variables </span></h1>
+            <h1><span> Tercero "C" Vespertino </span></h1>
+        </div>
+    </header>
+    
+    <div class="book">
+        <div class="page">
+            <h1 class="title">Integrales</h1>
+            
+            <h2 class="chapter">Pagina 1:integrales por definicion </h2>
+            <p class="section"> 
+                a integral definida es un concepto utilizado para determinar el valor de las áreas limitadas por curvas y rectas.
+                <li class="section"> Propiedades de la integral definida</li>
+                <p class="section">
+                  <p>  1. Toda integral extendida a un intervalo de un solo punto, [a, a], es igual a cero.</p>
+                  <p>  2. Cuando la función f (x) es mayor que cero, su integral es positiva; si la función es menor que cero, su integral es negativa. </p>
+                  <p>  3. La integral de una suma de funciones es igual a la suma de sus integrales tomadas por separado. </p>
+                  <p>  4. La integral del producto de una constante por una función es igual a la constante por la integral de la función (es decir, se puede «sacar» la constante de la integral). </p>
+                  <p> 5. Al permutar los límites de una integral, ésta cambia de signo.
+            
+                <p class="section">
+                Características Principales
+                <li class="section"> 1. Notacion sigma.:</li>
+                <p clas="section">
+                    La sumatoria o sumatorio (llamada también notación sigma ) es una operación matemática que se emplea para calcular la suma de muchos o infinitos sumandos.
+
+                    La operación sumatoria se expresa con la letra griega sigma mayúscula Σ, y se representa así:
+                    
+                    \[ \sum_{i=1}^{n} x_i \]
+            
+              
+                <p class="section">
+                    Expresión que se lee: " sumatoria de Xi,  donde i toma los valores desde 1 hasta n ".
+
+                    x es la variable
+                    
+                    i es el valor inicial, llamado límite inferior.
+                    
+                    n es el valor final, llamado límite superior.
+
+                    \[ \sum_{i=1}^{n} x_i = \sum x_i \]
+                   
+           
+            Mirando la imagen de una notación sigma arriba, vemos que la x nos dice qué serie o secuencia estamos sumando. Puede ser un solo término o puede ser un polinomio o una secuencia. La a es el límite inferior y la z es el límite superior; de la a a la z se sustituirá en la serie o secuencia de valores.
+               
+            \[ 0+1+2+3+4+5=15. \quad \text{So} \quad \sum_{x=0}^{5} x = 15 \]
+        </p>
+        </div>
+        <div class="page">
+            
+            <h2 class="chapter">Pagina 2: Integración por sustitución.</h2>
+            <p>
+                La integración por sustitución  se utiliza para simplificar la integración de funciones complicadas. La idea básica detrás de la integración por sustitución es reescribir la función integral en términos de una nueva variable, de manera que la integral se convierta en una forma más manejable.
+            </p>
+            <p>
+                Consiste en despejar una de las incógnitas en una de las ecuaciones y luego sustituirla en la otra ecuación. De esta forma, se obtiene una ecuación con una sola incógnita, que puede ser resuelta para obtener su valor.
+            </p>
+            <p>
+                <br>
+                <h4>Para resolver la integral, debemos cambiar todas las variables a u. Entonces, consideramos lo siguiente:</h4>
+
+                \begin{align*}
+                \text{Dado que } u &= 2x + 1, \quad \frac{du}{dx} = 2 \\
+                \text{Resolviendo para } x: x &= \frac{u-1}{2}
+                \end{align*}
+                
+                <h4>Entonces, la integral se vuelve:</h4>
+                
+                \begin{align*}
+                \int \frac{u - 1}{2} u^2 du &= \int \frac{u^4}{4} - \frac{u^3}{4} du \\
+                &= \frac{u^5}{20} - \frac{u^4}{16} + C \\
+                &= \frac{u^4}{80}(4u - 5) + C
+                \end{align*}
+                
+                <h4>Ahora, sustituimos u = 2x + 1 de vuelta y tenemos:</h4>
+                
+                \begin{align*}
+                \int x(2x + 1)^3dx &= \frac{(2x + 1)^4}{80} [4(2x + 1) - 5] + C \\
+                &= \frac{(2x + 1)^4}{80}(8x - 1) + C
+                \end{align*}
+            </p>
+        </div>
+
+        <div class="page">
+            <h2 class="chapter">Capítulo 3: Integrales impropias</h2>
+            <p class="section">
+                Las integrales impropias son aquellas que se definen en intervalos infinitos o que tienen puntos singulares en el intervalo de integración. Por ejemplo, la integral es impropia porque el límite superior es infinito. Para calcular una integral impropia, se usa el siguiente criterio:
+            </p><br>
+            <h3>Cómo integrar funciones por partes</h3><br>
+            <p>
+                La integración por partes es usada para integrar el producto de dos funciones. Para integrar funciones usando este método seguimos los siguientes pasos:
+            </p><br>
+            <h4>Escoge dos funciones, u y dv/dx</h4><br>
+            <p>
+                El producto de las dos funciones, \[ u \frac{dv}{dx} \] es el integrando. 
+            </p><br>
+            <h4>Determina la derivada de u con respecto a x y la llamamos u</h4><br>
+            <h4>Determina la integral de dv/dx con respecto a x y la llamamos v</h4><br>
+            <h4>Usa la formula de integracion por partes:</h4><br>
+            <p>
+                \[ \int u \frac{dv}{dx} \, dx = uv - \int v \frac{du}{dx} \, dx \quad \]
+            </p><br>
+            <p>Tambien se puede utilizar la siguiente formula:</p><br>
+            <p>  \[ \int u \, dv = uv - \int v \, du \quad\] </p><br>
+            <div class="separador"></div>
+            <h3>Otro ejemplo seria:</h3><br>
+            <h4>Si el intervalo de integracion es:</h4>
+            <p>  \[ (a, \infty), \\    \] </p>
+            <h4>Se hace el cambio de variable</h4>
+            <p>  \[ \frac{1}{x} \\       \] </p>
+            <h4>Se calcula la integral</h4>
+            <p> \[ \int_a^{\infty} f(x)dx = \int_0^{1/a} f\left(\frac{1}{t}\right)\frac{1}{t^2}dt   \] </p>
+            <h4>Si el intervalo de integracion es:</h4>
+            <p> \[ (-\infty, b), \\  \]</p>
+            <h4>Se hace el cambio de variable</h4>
+            <p> \[  t = -\frac{1}{x} \\   \]</p>
+            <h4>y se calcula el integral</h4>
+            <p> \[ \int_{-\infty}^{b} f(x)dx = \int_{-1/b}^{0} f\left(-\frac{1}{t}\right)\frac{1}{t^2}dt   \]</p>
+            <h4>Si el intervalo de integración es: </h4>
+            <p> \[  (-\infty, \infty), \\           \]</p>
+            <h4>Se divide el intervalo en dos partes y se calculan las integrales por separado:</h4>
+            <p> \[ \int_{-\infty}^{\infty} f(x)dx = \int_{-\infty}^{0} f(x)dx + \int_{0}^{\infty} f(x)dx                \]</p>
+            <h4>Si el intervalo de integración es: </h4>
+            <p> \[ (a, b) \\               \]</p>
+            <h4>y hay un punto singular, en el intervalo, se divide el intervalo en dos partes y se calculan los límites laterales:</h4>
+            <p> \[ \int_{a}^{b} f(x)dx = \lim_{\epsilon \to 0^+} \int_{a}^{a+\epsilon} f(x)dx + \lim_{\epsilon \to 0^+} \int_{b-\epsilon}^{b} f(x)dx\]</p>
+        </div>
+       
+    
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="/images/fafi_logo.png">
+            </div>
+        </div>   
+    </footer>
+
+    <div class="copyright">
+        TERCERO "C" Vespertino
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
